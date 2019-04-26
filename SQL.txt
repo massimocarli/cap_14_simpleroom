@@ -1,0 +1,20 @@
+/* Version without media */
+INSERT INTO Product (id, name, description) VALUES (1,"Product 1", "Description 1");
+INSERT INTO Product (id, name, description) VALUES (2,"Product 2", "Description 2");
+INSERT INTO Product (id, name, description) VALUES (3,"Product 3", "Description 3");
+
+/* Version with media */
+INSERT INTO Product (id, name, description, media_file, media_description) VALUES (1,"Product 1", "Description 1", "Media File 1", "Media Descr 1");
+INSERT INTO Product (id, name, description, media_file, media_description) VALUES (2,"Product 2", "Description 2", "Media File 3", "Media Descr 2");
+INSERT INTO Product (id, name, description, media_file, media_description) VALUES (3,"Product 3", "Description 3", "Media File 2", "Media Descr 3");
+
+/* Price data */
+INSERT INTO Price (currency, value, product_id) VALUES ("EURO", 10.0, 1);
+INSERT INTO Price (currency, value, product_id) VALUES ("GBP", 8.0, 1);
+INSERT INTO Price (currency, value, product_id) VALUES ("DOLLARS", 12.0, 1);
+INSERT INTO Price (currency, value, product_id) VALUES ("EURO", 10.0, 2);
+INSERT INTO Price (currency, value, product_id) VALUES ("GBP", 8.0, 2);
+INSERT INTO Price (currency, value, product_id) VALUES ("DOLLARS", 12.0, 2);
+INSERT INTO Price (currency, value, product_id) VALUES ("EURO", 10.0, 3);
+INSERT INTO Price (currency, value, product_id) VALUES ("GBP", 8.0, 3);
+INSERT INTO Price (currency, value, product_id) VALUES ("DOLLARS", 12.0, 3);
